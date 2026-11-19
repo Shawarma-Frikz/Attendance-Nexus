@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "NEXUS Student",
+    "slug": "nexus-student",
+    "scheme": "nexusstudent",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "edu.nexus.student",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "edu.nexus.student"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "NEXUS uses a selected photo as your student profile picture.",
+          "cameraPermission": "NEXUS uses the camera only when you choose to take a profile picture.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-secure-store",
+      "./withLanCertificate"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5b5e473a-d7c1-4eed-8398-cb8f913c9923"
+      }
+    },
+    "owner": "idrisfou"
+  }
+}
